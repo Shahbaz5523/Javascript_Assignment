@@ -596,3 +596,234 @@ if(check_vowol == 'a' || check_vowol == 'e' || check_vowol=='i' || check_vowol==
 }
 
 // Chapter 12 to 13 assignment 5
+let mypassword = 'pass123';
+let confirmPassword = prompt("Enter your password to login: ");
+if(confirmPassword != ""){
+  if(confirmPassword == mypassword){
+    alert("Correct The password you entered matches the original password");
+  }else{
+    alert("Incorrect password!");
+  }
+}else{
+  alert("Please enter your password again.");
+}
+
+// Chapter 12 to 13 assignment 6
+var greeting;
+var hour = 13;
+if(hour < 18){
+  greeting = "Good day";
+}else{
+  greeting = "Good evening";
+}
+
+// Chapter 12 to 13 assignment 7
+let currentTime  = prompt("Enter Time in 24 hours colck format and dont add : between time enter like(1900)");
+if(currentTime >='0000' && currentTime<1200){
+  alert("Good Morning");
+}else if(currentTime >=1200 && currentTime<1700){
+  alert("Good afternoon");
+}else if(currentTime >=1700 && currentTime<2100){
+  alert("Good evening");
+}else if(currentTime >=2100 && currentTime<=2359){
+  alert("Good Night");
+}else{
+  alert("wrong input");
+}
+
+// --------------------------End of Chapter 12 to 13------------------------------
+
+alert("Chapter 14 to 16 staring...")
+// Chapter 14 to 16 assignment 1
+let studentsArry = [];
+// Chapter 14 to 16 assignment 2
+let studtens = {};
+// Chapter 14 to 16 assignment 3
+let names = ['Shahbaz','Ali','Hassan'];
+// Chapter 14 to 16 assignment 4
+let ages = [12,56,34,21,10];
+// Chapter 14 to 16 assignment 5
+let flags = [true,false];
+// Chapter 14 to 16 assignment 6
+let myarr = ['Shahbaz',21,'FSD'];
+// Chapter 14 to 16 assignment 7
+let qualifications = ['SSC','HSC','BCS','BS','BCOM','MS','M.Phil','PHD'];
+document.writeln("<br><br><h1>Qualification:</h1>");
+document.writeln('1) '+qualifications[0]);
+document.writeln('<br>2) '+qualifications[1]);
+document.writeln('<br>3) '+qualifications[2]);
+document.writeln('<br>4) '+qualifications[3]);
+document.writeln('<br>5) '+qualifications[4]);
+document.writeln('<br>6) '+qualifications[5]);
+document.writeln('<br>7) '+qualifications[6]);
+document.writeln('<br>8) '+qualifications[7]);
+
+// Chapter 14 to 16 assignment 8
+let studtens_names = ['Michael','John','Tony'];
+let score = [320,230,480];
+let totalMarks = 500;
+let studentPer = [];
+studentPer[0] = (score[0]/totalMarks)*100;
+studentPer[1] = (score[1]/totalMarks)*100;
+studentPer[2] = (score[2]/totalMarks)*100;
+document.writeln("<br><br>Score of "+ studtens_names[0] + ' is ' + score[0] + '. Percentage: '+studentPer[0]+'%');
+document.writeln("<br>Score of "+ studtens_names[1] + ' is ' + score[1] + '. Percentage: '+studentPer[1]+'%');
+document.writeln("<br>Score of "+ studtens_names[2] + ' is ' + score[2] + '. Percentage: '+studentPer[2]+'%');
+
+// Chapter 14 to 16 assignment 9
+let colors = ['red','blue','green','yellow','white','black','pink','purple'];
+document.writeln("<br><br>Colors:<b>");
+document.writeln("<br>"+colors[0]);
+document.writeln("<br>"+colors[1]);
+document.writeln("<br>"+colors[2]);
+document.writeln("<br>"+colors[3]);
+document.writeln("<br>"+colors[4]);
+document.writeln("<br>"+colors[5]);
+document.writeln("<br>"+colors[6]);
+document.writeln("<br>"+colors[7]);
+let userColor = prompt("Enter a color name to add in start of the arry");
+colors.unshift(userColor);
+document.writeln("<br><br>after adding in start<br>")
+document.writeln("<br>"+colors[0]);
+document.writeln("<br>"+colors[1]);
+document.writeln("<br>"+colors[2]);
+document.writeln("<br>"+colors[3]);
+document.writeln("<br>"+colors[4]);
+document.writeln("<br>"+colors[5]);
+document.writeln("<br>"+colors[6]);
+document.writeln("<br>"+colors[7]);
+document.writeln("<br>"+colors[8]);
+
+userColor = prompt("Enter a color name to add in start of the arry");
+colors.push(userColor);
+document.writeln("<br><br>after adding in end<br>")
+document.writeln("<br>"+colors[0]);
+document.writeln("<br>"+colors[1]);
+document.writeln("<br>"+colors[2]);
+document.writeln("<br>"+colors[3]);
+document.writeln("<br>"+colors[4]);
+document.writeln("<br>"+colors[5]);
+document.writeln("<br>"+colors[6]);
+document.writeln("<br>"+colors[7]);
+document.writeln("<br>"+colors[8]);
+document.writeln("<br>"+colors[9]);
+
+colors.unshift('DarkPink');
+colors.unshift('LightPink');
+document.writeln("<br><br>after adding 2colors in start<br>")
+document.writeln("<br>"+colors[0]);
+document.writeln("<br>"+colors[1]);
+document.writeln("<br>"+colors[2]);
+document.writeln("<br>"+colors[3]);
+document.writeln("<br>"+colors[4]);
+document.writeln("<br>"+colors[5]);
+document.writeln("<br>"+colors[6]);
+document.writeln("<br>"+colors[7]);
+document.writeln("<br>"+colors[8]);
+document.writeln("<br>"+colors[9]);
+document.writeln("<br>"+colors[10]);
+document.writeln("<br>"+colors[11]);
+
+colors.shift(0);
+document.writeln("<br><br>after deleteting 1st color in start<br>")
+document.writeln("<br>"+colors[0]);
+document.writeln("<br>"+colors[1]);
+document.writeln("<br>"+colors[2]);
+document.writeln("<br>"+colors[3]);
+document.writeln("<br>"+colors[4]);
+document.writeln("<br>"+colors[5]);
+document.writeln("<br>"+colors[6]);
+document.writeln("<br>"+colors[7]);
+document.writeln("<br>"+colors[8]);
+document.writeln("<br>"+colors[9]);
+document.writeln("<br>"+colors[10]);
+
+colors.pop(10)
+document.writeln("<br><br>after deleteting last color in start<br>")
+document.writeln("<br>"+colors[0]);
+document.writeln("<br>"+colors[1]);
+document.writeln("<br>"+colors[2]);
+document.writeln("<br>"+colors[3]);
+document.writeln("<br>"+colors[4]);
+document.writeln("<br>"+colors[5]);
+document.writeln("<br>"+colors[6]);
+document.writeln("<br>"+colors[7]);
+document.writeln("<br>"+colors[8]);
+document.writeln("<br>"+colors[9]);
+
+userColor = prompt("Enter a color name");
+let colorindex = +prompt("Enter index at which you want to add color");
+colors.splice(colorindex,0,userColor)
+document.writeln("<br><b><br>Insert into specific index<br>");
+document.writeln("<br>"+colors[0]);
+document.writeln("<br>"+colors[1]);
+document.writeln("<br>"+colors[2]);
+document.writeln("<br>"+colors[3]);
+document.writeln("<br>"+colors[4]);
+document.writeln("<br>"+colors[5]);
+document.writeln("<br>"+colors[6]);
+document.writeln("<br>"+colors[7]);
+document.writeln("<br>"+colors[8]);
+document.writeln("<br>"+colors[9]);
+document.writeln("<br>"+colors[10]);
+
+let startingcolorindex = +prompt("Enter index from which you want to remove color");
+let endingcolorindex = +prompt("Enter index to which you want to remove color");
+colors.splice(startingcolorindex,endingcolorindex+1);
+document.writeln("<br><b><br>Remove Colors form index to index<br>");
+for(let i=0; i<colors.length; i++){
+  document.writeln("<br>"+colors[i]);
+}
+
+// Chapter 14 to 16 assignment 10
+score = [320,230,480,120];
+document.writeln("<br><br>Score of students: ");
+document.writeln(score[0] +','+score[1] +','+score[2] +','+score[3]);
+score.sort();
+document.writeln("<br><br>Orderd Score of students: ");
+document.writeln(score[0] +','+score[1] +','+score[2] +','+score[3]);
+
+// Chapter 14 to 16 assignment 11
+let cities = ['Karachi','Lahore','Faisalabad','Peshawar'];
+document.writeln("<br><b>Cities List:<br>");  
+document.writeln(cities[0]+','+cities[1]+','+cities[2]+','+cities[3]);  
+document.writeln("<br><b><br>Selected Cities List:<br>");  
+let SelectedCites = cities.slice(0,3);
+document.writeln(SelectedCites[0]+','+SelectedCites[1]+','+SelectedCites[2]);  
+
+// Chapter 14 to 16 assignment 12
+var arr = ['This', 'is', 'my', 'cat'];
+document.writeln("<br><br>Array:<br>");
+document.writeln(arr[0]+","+arr[1]+","+arr[2]+","+arr[3]);
+var joinedArr = arr.join(' ');
+document.writeln("<br><br>String:<br>");
+document.writeln(joinedArr);
+
+// Chapter 14 to 16 assignment 13
+let devices = ['Keyboard','mouse','printer','monitor'];
+document.writeln("<br><br>Divices:");
+document.writeln(devices[0]+','+devices[1]+','+devices[2]+','+devices[3]);
+document.writeln("<br><br>Out:");
+document.writeln('<br>'+devices[0]);
+document.writeln("<br><br>Out:");
+document.writeln('<br>'+devices[1]);
+document.writeln("<br><br>Out:");
+document.writeln('<br>'+devices[2]);
+document.writeln("<br><br>Out:");
+document.writeln('<br>'+devices[3]);
+
+// Chapter 14 to 16 assignment 14
+document.writeln("<br><br>Divices:");
+document.writeln(devices[0]+','+devices[1]+','+devices[2]+','+devices[3]);
+document.writeln("<br><br>Out:");
+document.writeln('<br>'+devices[3]);
+document.writeln("<br><br>Out:");
+document.writeln('<br>'+devices[2]);
+document.writeln("<br><br>Out:");
+document.writeln('<br>'+devices[1]);
+document.writeln("<br><br>Out:");
+document.writeln('<br>'+devices[0]);
+
+// Chapter 14 to 16 assignment 15
+let phones =['Apple','Samsung', 'Motorola', 'Nokia', 'Sony', 'Haier'];
+document.write("<br><br><select><option>"+ phones[0] +"</option><option>"+ phones[1] +"</option><option>"+ phones[2] +"</option><option>"+ phones[3] +"</option><option>"+ phones[4] +"</option><option>"+ phones[5] +"</option></select>");
