@@ -826,4 +826,94 @@ document.writeln('<br>'+devices[0]);
 
 // Chapter 14 to 16 assignment 15
 let phones =['Apple','Samsung', 'Motorola', 'Nokia', 'Sony', 'Haier'];
-document.write("<br><br><select><option>"+ phones[0] +"</option><option>"+ phones[1] +"</option><option>"+ phones[2] +"</option><option>"+ phones[3] +"</option><option>"+ phones[4] +"</option><option>"+ phones[5] +"</option></select>");
+document.write("<br><br><select><option>"+ phones[0] +"</option><option>"+ phones[1] +"</option><option>"+ phones[2] +"</option><option>"+ phones[3] +"</option><option>"+ phones[4] +"</option><option>"+ phones[5] +"</option></select><br><br>");
+
+// --------------------------End of Chapter 14 to 16------------------------------
+
+// Chapter 17 to 20 assignment 1
+let multi = [[],[],[]];
+
+// Chapter 17 to 20 assignment 2
+let matrix = [[0,1,2,3],[1,0,1,2],[2,1,0,1]];
+for(let j=0; j<matrix.length; j++){
+  for(let k=0; k<4; k++){
+    document.writeln(matrix[j][k]);
+  }
+  document.writeln('<br>')
+}
+
+// Chapter 17 to 20 assignment 3
+for(let l=1; l<=10; l++){
+  document.writeln(l + '<br>')
+}
+
+// Chapter 17 to 20 assignment 4
+let tablenum = +prompt('Enter a number for mutiplication table:');
+let len =  +prompt('Enter a length:');
+document.writeln("<br><br>")
+for(let i=1; i<=len; i++){
+  document.writeln(tablenum + 'x' + i + '=' + tablenum*i + '<br>');
+}
+
+// Chapter 17 to 20 assignment 5
+let fruits = ['apple', 'banana', 'mango', 'orange','strawberry'];
+for(let i=0; i<fruits.length; i++){
+  document.writeln(fruits[i]+"<br>")
+}
+document.writeln("<br>")
+for(let j=0; j<fruits.length; j++){
+  document.writeln("Element at index "+ j +" is "+fruits[j]+"<br>")
+}
+
+// Chapter 17 to 20 assignment 6
+document.writeln('<br><br>Counting:')
+for(let k=0; k<=15; k++){
+  document.writeln(k +',');
+}
+document.writeln('<br><br>Reverse Counting:')
+for(let l=10; l>=1; l--){
+  document.writeln(l +',');
+}
+document.writeln('<br><br>Even:')
+for(let l=0; l<=20; l++){
+  if(l%2==0){
+    document.writeln(l +',');
+  }
+}
+document.writeln('<br><br>Odd:')
+for(let m=0; m<=20; m++){
+  if(m%2!=0){
+    document.writeln(m +',');
+  }
+}
+document.writeln('<br><br>Series:')
+for(let l=1; l<=20; l++){
+  if(l%2==0){
+    document.writeln(l +'k,');
+  }
+}
+
+// Chapter 17 to 20 assignment 7
+let foods  = ['cake', 'apple pie', 'cookie', 'chips', 'patties'];
+let findFood = prompt("Welcome to ABC Bakary. What do you want to order.");
+for(let m=0;m<foods.length;m++){
+  if(findFood.toLowerCase() == foods[0]){
+    alert(foods[m] + ' is available at index ' + m + ' in our bakary');
+    break;
+  }else{
+    alert("We are sorry. "+findFood+" is not available in our bakary.")
+  }
+}
+
+// Chapter 17 to 20 assignment 8 and 9
+let numbersArry = [24, 53, 78, 91, 12];
+alert('Max number is : '+ Math.max(...numbersArry));
+alert('Min number is : '+ Math.min(...numbersArry));
+
+// Chapter 17 to 20 assignment 10
+document.writeln("<br><br>");
+for(let n=1;n<=100;n++){
+  if(n%5==0){
+    document.writeln(n + ',');
+  }
+}
