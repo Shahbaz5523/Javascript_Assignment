@@ -551,3 +551,48 @@ alert(resultofCalculation)
 
 // --------------------------End of Chapter 6 to 11------------------------------
 
+// Chapter 12 to 13 assignment 1
+let charter = prompt("Enter a single character only");
+if(charter >= 'A' && charter <= 'Z'){
+  alert("This is an Capital Letter")
+}else if(charter >= 'a' && charter <= 'z'){
+  alert("This is an Small Letter")
+}else if(charter >=0 || charter <=0){
+  alert("This is a number");
+}else{
+  alert("This is symbols");
+}
+
+// Chapter 12 to 13 assignment 2
+num1 = +prompt("Enter a number");
+num2 = +prompt("Enter a number");
+if(num1>num2){
+  alert(num1 + ' is Larger number')
+}else if(num1<num2){
+  alert(num2 + ' is Larger number')
+}else if(num1==num2){
+  alert('Both are equal')
+}else{
+  alert("invalid input")
+}
+
+// Chapter 12 to 13 assignment 3
+let check_postive = +prompt("Enter a number");
+if(check_postive >=0){
+  alert("this is a postive number")
+}else if(check_postive <0){
+  alert("this is a Negative number")
+}
+else{
+  alert("invalid input")
+}
+
+// Chapter 12 to 13 assignment 4
+let check_vowol = prompt("Enter an Alphabat Character");
+if(check_vowol == 'a' || check_vowol == 'e' || check_vowol=='i' || check_vowol=='o' || check_vowol=='u'){
+  alert("This is vowel")  
+}else{
+  alert("This is not a vowel")  
+}
+
+// Chapter 12 to 13 assignment 5
