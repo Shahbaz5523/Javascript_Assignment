@@ -187,7 +187,7 @@ let priceOf5Ticktes = priceOfticket * 5;
 document.writeln("<br><br>Total cost to buy 5 ticks to a movies is " + priceOf5Ticktes + "PKR");
 
 
-// Chapter 6 assignment 5
+// Chapter 5 assignment 5
 let n = 4;
 document.writeln('<br><h1>Table of ' + n + ' </h1>')
 document.writeln(n+'x1 = '+ n*1);
@@ -202,7 +202,7 @@ document.writeln('<br>'+n+'x9 = '+ n*9);
 document.writeln('<br>'+n+'x10 = '+ n*10);
 
 
-// Chapter 6 assignment 6
+// Chapter 5 assignment 6
     // Temperature Converter
 let t1 = 25; //Celsius temperature
 let t2 = 70; //Fahrenheit temperature
@@ -212,7 +212,7 @@ result = (t2 -32) * 5/9; //converting Fahrenheot to Celsisus
 document.writeln("<br>" + t2 + "°F is " + result + "°C");
 
 
-// Chapter 6 assignment 7
+// Chapter 5 assignment 7
     // Shoping Cart
 document.writeln('<br><br><h1>Shopping Cart</h1><br>');
 let priceOfitem1st = 650;
@@ -232,7 +232,7 @@ document.writeln('<br>Shipping Charges is ' + shipping_charges);
 document.writeln('<br><br>Total cost of your order is ' + result);
 
 
-// Chapter 6 assignment 8
+// Chapter 5 assignment 8
     //Marks Sheet
 let toatl_marks = 980;
 let obtain_marks = 804;
@@ -243,7 +243,7 @@ document.writeln('<br>Obtained marks : ' + obtain_marks);
 document.writeln('<br>Precentage : ' + percentage+"%");
 
 
-// Chapter 6 assignment 9
+// Chapter 5 assignment 9
 document.writeln('<br><br><h1>Currancy in PKR</h1>');
 let dollars = 10;
 let riyals = 25;
@@ -251,12 +251,12 @@ let pakistani_rupees = (dollars * 104.80) + (riyals * 28);
 document.writeln('The Currency in PKR: ' + pakistani_rupees);
 
 
-// Chapter 6 assignment 10
+// Chapter 5 assignment 10
 let x = 9;
 result = ((x+5)*10)/2;
 console.log(result)
 
-// Chapter 6 assignment 11
+// Chapter 5 assignment 11
     //Age Calculator
 let current_year = 2020;
 let birth_year = 1998;
@@ -347,7 +347,7 @@ alert("Welcome to our website " + yourname);
 
 
 // Chapter 6 assignment 4
-n = prompt('Enter a number');
+n = +prompt('Enter a number');
 if(isNaN(n) === true){
     n = 5;
 }
