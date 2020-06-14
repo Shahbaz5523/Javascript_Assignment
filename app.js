@@ -553,11 +553,11 @@ alert(resultofCalculation)
 
 // Chapter 12 to 13 assignment 1
 let charter = prompt("Enter a single character only");
-if(charter >= 'A' && charter <= 'Z'){
+if(charter.charCodeAt() >= '065'	 && charter.charCodeAt() <= '090'){
   alert("This is an Capital Letter")
-}else if(charter >= 'a' && charter <= 'z'){
+}else if(charter.charCodeAt() >= '097' && charter.charCodeAt() <= '122'){
   alert("This is an Small Letter")
-}else if(charter >=0 || charter <=0){
+}else if(charter.charCodeAt() >=48 && charter.charCodeAt() <=57){
   alert("This is a number");
 }else{
   alert("This is symbols");
