@@ -894,15 +894,19 @@ for(let l=1; l<=20; l++){
 }
 
 // Chapter 17 to 20 assignment 7
+let findedFoodindex;
 let foods  = ['cake', 'apple pie', 'cookie', 'chips', 'patties'];
 let findFood = prompt("Welcome to ABC Bakary. What do you want to order.");
 for(let m=0;m<foods.length;m++){
-  if(findFood.toLowerCase() == foods[0]){
-    alert(foods[m] + ' is available at index ' + m + ' in our bakary');
+  if(findFood === foods[m]){
+    findedFoodindex = m;
     break;
-  }else{
-    alert("We are sorry. "+findFood+" is not available in our bakary.")
   }
+}
+if(findedFoodindex >=0){
+    alert(findFood + ' is available at index ' + findedFoodindex + ' in our bakary');
+}else{
+    alert("We are sorry. "+findFood+" is not available in our bakary.")
 }
 
 // Chapter 17 to 20 assignment 8 and 9
